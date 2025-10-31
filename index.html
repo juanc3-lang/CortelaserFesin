@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaserCut Pro - Corte Láser de Precisión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">⚡ LaserCut Pro</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Corte Láser de Precisión</h1>
+            <p>Especialistas en acero inoxidable y acero al carbono</p>
+            <a href="#contacto" class="btn">Solicita tu Cotización</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400" alt="Corte Láser">
+                <h3>Corte Láser en Acero Inoxidable</h3>
+                <p>Precisión excepcional en cortes de acero inoxidable de diferentes espesores. Acabados perfectos para aplicaciones industriales y decorativas.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400" alt="Acero al Carbono">
+                <h3>Corte en Acero al Carbono</h3>
+                <p>Procesamiento eficiente de acero al carbono con tecnología láser de última generación. Ideal para fabricación industrial.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400" alt="Diseño Personalizado">
+                <h3>Diseños Personalizados</h3>
+                <p>Convertimos tus ideas en realidad. Trabajamos con archivos CAD y ofrecemos asesoría técnica en diseño.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <h2>Acerca de Nosotros</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600" alt="Nuestra Empresa" class="about-img">
+            <div>
+                <p style="margin-bottom: 1rem;">Con más de 10 años de experiencia en el sector industrial, somos líderes en servicios de corte láser de alta precisión.</p>
+                <p style="margin-bottom: 1rem;">Contamos con equipos de última tecnología que nos permiten realizar cortes en planchas de acero inoxidable y acero al carbono con tolerancias mínimas y acabados excepcionales.</p>
+                <p style="margin-bottom: 1rem;">Nuestro compromiso es ofrecer calidad, puntualidad y el mejor servicio al cliente. Trabajamos con empresas de diversos sectores: metalmecánica, construcción, arquitectura, decoración y más.</p>
+                <ul style="margin-top: 1.5rem; list-style-position: inside;">
+                    <li>✓ Tecnología láser de fibra de última generación</li>
+                    <li>✓ Personal altamente capacitado</li>
+                    <li>✓ Tiempos de entrega competitivos</li>
+                    <li>✓ Asesoría técnica personalizada</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog y Novedades</h2>
+        <div class="blog-controls">
+            <button onclick="openBlogModal()">➕ Agregar Nueva Publicación</button>
+        </div>
+        <div class="blog-grid" id="blogGrid">
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400" alt="Blog">
+                <div class="blog-content">
+                    <p class="blog-date">15 de Octubre, 2025</p>
+                    <h3>Ventajas del Corte Láser vs Métodos Tradicionales</h3>
+                    <p>Descubre por qué el corte láser se ha convertido en el método preferido en la industria moderna. Mayor precisión, menos desperdicio y acabados superiores.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1581092918484-8313e1f875c2?w=400" alt="Blog">
+                <div class="blog-content">
+                    <p class="blog-date">10 de Octubre, 2025</p>
+                    <h3>Aplicaciones del Acero Inoxidable en la Arquitectura</h3>
+                    <p>El acero inoxidable cortado con láser abre un mundo de posibilidades en diseño arquitectónico. Conoce los proyectos más innovadores.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=400" alt="Blog">
+                <div class="blog-content">
+                    <p class="blog-date">5 de Octubre, 2025</p>
+                    <h3>Mantenimiento Preventivo en Equipos de Corte Láser</h3>
+                    <p>La clave para mantener la máxima eficiencia y prolongar la vida útil de los equipos láser industriales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <div class="contact-grid">
+            <form class="contact-form" onsubmit="handleContact(event)">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono">
+                <textarea rows="5" placeholder="Describe tu proyecto o consulta" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📍 Dirección:</strong>
+                    <p>Av. Industrial 123, Parque Industrial<br>Lima, Perú</p>
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Teléfono:</strong>
+                    <p>+51 987 654 321</p>
+                </div>
+                <div class="contact-item">
+                    <strong>✉️ Email:</strong>
+                    <p>contacto@lasercutpro.com</p>
+                </div>
+                <div class="contact-item">
+                    <strong>⏰ Horario:</strong>
+                    <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 8:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LaserCut Pro. Todos los derechos reservados.</p>
+        <p>Corte Láser de Precisión | Acero Inoxidable | Acero al Carbono</p>
+    </footer>
+
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBlogModal()">&times;</span>
+            <h2>Nueva Publicación</h2>
+            <form id="blogForm" onsubmit="addBlogPost(event)">
+                <div class="form-group">
+                    <label>Título:</label>
+                    <input type="text" id="postTitle" required>
+                </div>
+                <div class="form-group">
+                    <label>Fecha:</label>
+                    <input type="text" id="postDate" placeholder="Ej: 20 de Octubre, 2025" required>
+                </div>
+                <div class="form-group">
+                    <label>Contenido:</label>
+                    <textarea id="postContent" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>URL de Imagen:</label>
+                    <input type="url" id="postImage" placeholder="https://ejemplo.com/imagen.jpg" required>
+                </div>
+                <button type="submit" style="width: 100%; padding: 1rem; background: #1e3c72; color: white; border: none; border-radius: 50px; cursor: pointer; font-size: 1rem;">Publicar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
